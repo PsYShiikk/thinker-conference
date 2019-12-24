@@ -40,12 +40,12 @@ $('.lien_menu').click( ()=>{
 $(window).scroll(function() { // au scroll le header devient plus petit ainsi que le logo
     var height = $(window).scrollTop();
 
-    if(height  > 1) {
+    if(height  > 50) {
     $("header").css("height","80px");
     $(".logo_header").css("width","150px");
     }
 
-    if(height == 0) {
+    if(height < 50) {
         $("header").css("height","115px");
         $(".logo_header").css("width","200px");
 
