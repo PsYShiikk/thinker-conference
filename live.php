@@ -23,7 +23,7 @@
 
 <!-- Chargement du header sur la page -->
  <?php 
- $page = "accueil";
+ $page = "live";
  include("header.php") ?>
 
 <div class="all">

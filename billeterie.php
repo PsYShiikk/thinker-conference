@@ -22,8 +22,8 @@
 <body>
 
 <!-- Chargement du header sur la page -->
- <?php 
- $page = "accueil";
+ <?php
+ $page = "billeterie";
  include("header.php") ?>
 
 <div class="all">
