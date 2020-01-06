@@ -26,92 +26,22 @@
  $page = "accueil";
  include("header.php") ?>
 
-<div class="all">
-  <h1 class="titre" id="accueil">Le site est en construction.</h1>
-  <div class="logo"></div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<div id="coucou"></div>
+<div class="all">
+  <div class="infos-side">
+
+  </div>
+
+  <div id="accueil" class="accueil">
+    <div class="inner-accueil">
+      <div class="text-inner-accueil">
+        <p class="text-conference">conférence</p>
+        <p class="text-thinker">thinker</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>

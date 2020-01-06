@@ -2,7 +2,7 @@
     <a href="index.php" class="logo_header"></a>
 
     <div class="menu_header">
-        <?php 
+        <?php
             if($page == "accueil"){
                 echo '
                 <a href="#accueil" id="a_accueil" class="lien_menu active">accueil</a>

@@ -4,31 +4,80 @@ html{
 
 
 body{
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
+@font-face {
+	font-family: "Thinker";
+	src: url('../font/thinker.ttf');
+}
+@font-face {
+	font-family: "Thinker";
+	src: url('../font/thinker.eot');
+}
+@font-face {
+	font-family: "Thinker";
+	src: url('../font/thinker.woff');
+}
+
 
 
 .all{
-  padding-top: 115px;
-  width: 100%;
-  height: 70vh;
+  width: 62.5%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.infos-side{
   position: absolute;
-  top : 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  right: -30%;
+  width: 30%;
+  height: 80.5vh;
+  background:linear-gradient(to top,#5B4BA2,#01EEFC);
+}
+
+
+.accueil{
+  height: calc(100vh - 115px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-accueil{
+  width: 80%;
+  height: 600px;
+
+}
+
+.text-inner-accueil{
+  
+}
+
+.text-inner-accueil > p{
+  margin: 0;
   text-align: center;
 }
-.logo{
-  background: url('../img/logo/logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 80%;
-  height: 50vh;
-  margin: 0 auto;
 
+.text-conference{
+  color:white;
+  font-size:80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+.text-thinker{
+  font-family: 'Thinker';
+  padding-top: -20px;
+  line-height: 110px;
+  font-size:190px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
 }

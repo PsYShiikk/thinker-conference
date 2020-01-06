@@ -25,16 +25,26 @@ let anchor = window.location.hash.replace('#', '');
 
 
 
-if(anchor == "" && nom == "index"){
-    $('a_accueil').addClass('active');
-}
-else{
-    changementMenu();
+if(anchor != ""){
+   
+    if(anchor == "" && nom == "index"){
+        $('a_accueil').addClass('active');
+    }
+    else{
+        changementMenu();
+    }
+
+    $('.lien_menu').click( ()=>{
+        changementMenu();
+    });
 }
 
-$('.lien_menu').click( ()=>{
-    changementMenu();
-});
+else{
+    $('.lien_menu').click( ()=>{
+        changementMenu();
+    });
+}
+
 
 
 $(window).scroll(function() { // au scroll le header devient plus petit ainsi que le logo
