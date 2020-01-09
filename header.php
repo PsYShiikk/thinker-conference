@@ -6,7 +6,7 @@
             if($page == "accueil"){
                 echo '
                 <a href="#accueil" id="a_accueil" class="lien_menu active">accueil</a>
-                <a href="#coucou" id="a_coucou" class="lien_menu">à propos</a>
+                <a href="#apropos" id="a_apropos" class="lien_menu">à propos</a>
                 <a href="#conferences" id="a_conferences" class="lien_menu">les conférences</a>
                 <a href="live.php" class="lien_menu">le direct</a>
                 <a href="billeterie.php" class="lien_menu">billeterie</a>
@@ -16,7 +16,7 @@
             elseif ($page == "live") {
                 echo '
                 <a href="index.php" id="a_accueil" class="lien_menu">accueil</a>
-                <a href="index.php#coucou" id="a_coucou" class="lien_menu">à propos</a>
+                <a href="index.php#apropos" id="a_apropos" class="lien_menu">à propos</a>
                 <a href="index.php#conferences" id="a_conferences" class="lien_menu">les conférences</a>
                 <a href="live.php" class="lien_menu active">le direct</a>
                 <a href="billeterie.php" class="lien_menu">billeterie</a>
@@ -26,7 +26,7 @@
             elseif ($page == "billeterie") {
                 echo '
                 <a href="index.php" id="a_accueil" class="lien_menu">accueil</a>
-                <a href="index.php#coucou" id="a_coucou" class="lien_menu">à propos</a>
+                <a href="index.php#apropos" id="a_apropos" class="lien_menu">à propos</a>
                 <a href="index.php#conferences" id="a_conferences" class="lien_menu">les conférences</a>
                 <a href="live.php" class="lien_menu">le direct</a>
                 <a href="billeterie.php" class="lien_menu active">billeterie</a>

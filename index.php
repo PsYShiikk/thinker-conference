@@ -29,17 +29,73 @@
 
 <div class="all">
   <div class="infos-side">
-
+    <div class="infos-generales"></div>
+    <div class="reseaux-sociaux">
+      <span class="titre-reseaux">Suivez nous sur</span>
+      <div>
+      <a href="https://twitter.com/thinkerconf"><img src="assets/img/icone/twitter.svg" alt="logo-twitter" class="reseau"></a>
+      <a href="https://www.facebook.com/thinkerconf"><img src="assets/img/icone/facebook.svg" alt="logo-facebook" class="reseau"></a>
+      <a href="https://www.instagram.com/thinker_conference/"><img src="assets/img/icone/instagram.svg" alt="logo-instagram" class="reseau"></a>
+      </div>
+    </div>
   </div>
 
-  <div id="accueil" class="accueil">
+  <div id="accueil" class="accueil" id="accueil">
     <div class="inner-accueil">
       <div class="text-inner-accueil">
         <p class="text-conference">conférence</p>
         <p class="text-thinker">thinker</p>
       </div>
+      <div class="fleches">
+        <img src="assets/img/icone/fleche-g.svg" alt="fleche1" class="img-fleche fleche-gauche">
+        <img src="assets/img/icone/fleche-d.svg" alt="fleche2" class="img-fleche fleche-droite">
+      </div>
+      <div class="reservation">
+        <a href="billeterie.php" class="btn-res"><img src="assets/img/icone/caddie.svg" alt="caddie-reserv">Je prends <span> mes places</span></a>
+      </div>
     </div>
   </div>
+
+  <div class="apropos" id="apropos">
+    
+    <div class="trois-items">
+      <div class="rassembler">
+        <img src="assets/img/icone/rassembler.svg" alt="rassembler" class="img-trois-items">
+        <span class="titre-trois-items">
+          rassembler
+        </span>
+        <hr>
+        <p class="texte-trois-items">THINKER a pour but de <span>rassembler</span> les personnes autour de la curiosité intellectuelle lors de conférences qui explorent nombre de différents sujets. Cette année, ils sont tournés vers l'esprit et toutes ses facettes.   </p>     
+      </div>
+      <div class="explorer"><img src="assets/img/icone/explorer.svg" alt="explorer" class="img-trois-items">
+        <span class="titre-trois-items">
+          explorer
+        </span>
+        <hr>
+        <p class="texte-trois-items">THINKER recherche à <span>explorer</span> chaque sujet et a le traiter de façon innovante et intéressante afin de proposer une expérience unique à toute personne présente sur place, en stream et sur les replays.</p>     
+      </div>
+      <div class="transmettre"><img src="assets/img/icone/transmettre.svg" alt="transmettre" class="img-trois-items">
+        <span class="titre-trois-items">
+          transmettre
+        </span>
+        <hr>
+        <p class="texte-trois-items">THINKER a la profonde volonté de <span>transmettre</span> du savoir et de cultiver la curiosité intellectuelle.   </p>     
+      </div>
+    </div>
+
+    <div class="deux-items">
+      <p>Thinker est un événement qui vise à transmettre et cultiver la curiosité intellectuelle. L’événement s’articule autour de minies  conférences d’une quinzaine de minutes sur scène et retransmit en direct. Chaque conférence sera animée par des conférenciers experts en la matière. 
+
+</p>
+      <p>L’édition 2020 aura pour thème principale « l’esprit » dans toutes ses formes : esprit photographique, intelligence artificielle, musicologie, hypnose thérapeutique, mentalisme ... </p>
+    </div>
+
+
+  </div>
+
+  
+
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

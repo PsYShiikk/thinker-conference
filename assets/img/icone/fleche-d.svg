@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="245.2" height="98.2" viewBox="0 0 245.2 98.2">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-20.888" y1="36.223" x2="-20.883" y2="36.223" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4facfe"/>
+      <stop offset="1" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-20.893" y1="32.955" x2="-20.888" y2="32.955" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5b4ba2"/>
+      <stop offset="1" stop-color="#667eea"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="116783.516" y1="13369.997" x2="129330.578" y2="13369.997" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-25.569" y1="20.45" x2="-25.558" y2="20.45" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00f2fe"/>
+      <stop offset="1" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_87" data-name="Groupe 87" transform="translate(-619.7 -103.9)">
+    <path id="Tracé_20-2_1_" d="M697.1,152.6l.1.3C697.2,152.8,697.1,152.7,697.1,152.6Z" fill="none"/>
+    <path id="Tracé_21-2_1_" d="M811.4,179.6c-22.3-5.9-58.8-49.3-92.9-27.3-13.4,8.7-12.1,26.4-12.1,26.4s2.9-25.3,30.4-24.4,49.7,26.2,72,32.1c33.2,8.9,56-8.8,56-8.8S844.6,188.4,811.4,179.6Z" fill="url(#linear-gradient)"/>
+    <path id="Tracé_22-2_1_" d="M808.9,186.4c-22.3-5.9-44.5-31.2-72-32.1s-30.4,24.4-30.4,24.4h0c14.5-8.9,25.6-9.6,32.6-8.5,13.8,2,17.7,10.7,38.6,20.6,7.5,3.5,19,9,31.4,10,24.2,2.1,44.7-13,55.8-23.2C864.9,177.5,842.1,195.2,808.9,186.4Z" fill="url(#linear-gradient-2)"/>
+    <path id="Tracé_23-2_1_" d="M697.1,152.6l.1.3C697.2,152.8,697.1,152.7,697.1,152.6Z" fill="url(#linear-gradient-3)"/>
+    <path id="Tracé_24-2_1_" d="M745.6,122.4c-.4-.1-.9-.3-1.4-.4-24-6.4-45.5.9-56.2,5.6l-8.5-23.7-59.8,77,1.9.4c22.8-2.1,61.1-9.4,98.2-36.4A184.134,184.134,0,0,0,745.6,122.4Zm-48.5,30.2h0c0,.1.1.2.1.3Z" fill="url(#linear-gradient-4)"/>
+    <path id="Tracé_76" data-name="Tracé 76" d="M812.4,175.5c-15.7-9.3-16.3-23.3-39.6-39.5-5.3-3.7-14.5-10-27.2-13.6-.4-.1-.9-.3-1.4-.4-24-6.4-45.5.9-56.2,5.6l-8.5-23.7-59.8,77,1.9.4,93.3,20.8-8.5-23.5s-1.2-17.7,12.1-26.3c34.1-22.1,70.6,21.3,92.9,27.3,33.2,8.9,53.4-2,53.4-2C837.6,185.5,821.8,181,812.4,175.5Z" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>
