@@ -22,14 +22,18 @@
 <body>
 
 <!-- Chargement du header sur la page -->
- <?php 
+ <?php
  $page = "accueil";
- include("header.php") ?>
+ include("config.php");
+ include("header.php");
+ ?>
 
 
 <div class="all">
   <div class="infos-side">
-    <div class="infos-generales"></div>
+    <div class="infos-generales">
+      <img src="assets/img/date/date.svg" class="date" alt="date de l'evenement : le jeudi 19 mars à 18h30, médiathèque Robert Cousin à Lens">
+    </div>
     <div class="reseaux-sociaux">
       <span class="titre-reseaux">Suivez nous sur</span>
       <div>
@@ -90,6 +94,89 @@
       <p>L’édition 2020 aura pour thème principale « l’esprit » dans toutes ses formes : esprit photographique, intelligence artificielle, musicologie, hypnose thérapeutique, mentalisme ... </p>
     </div>
 
+
+  </div>
+
+  <div class="conferences" id="conferences">
+    
+    <div class="affichage_conf">
+    <?php
+      $idaleatoire = rand(1,4);
+
+      $sql1 = "SELECT * FROM conference WHERE id = ?";
+      $query1 = $pdo-> prepare($sql1);
+      $query1-> execute(array($idaleatoire));
+   
+      while($line1=$query1->fetch()){
+        $id1 = $line1['id'];
+        $conferencier1 = $line1['nom'];
+        $titre1 = $line1['titre'];
+        $heure1 =$line1['horaire'];
+        $url1 = $line1['url_photo'];
+
+     echo '
+     <a href="conference.php?id='.$id1.'" class="conferenceenavant conf">
+       <div class="div_conf">
+        <img src="'.$url1.'" alt="image de fond" class="backgroundconf">
+         <div class="overlay">
+            <div class="underoverlay">
+              <span class="titreconf">'.$titre1.'</span>
+              <span class="nomorateur">Par : '.$conferencier1.'</span>
+              <span class="btn-ensavoirplus">En savoir +</span>
+            </div>
+         </div>
+       </div>
+     </a>
+     
+     
+     ';}
+
+       $sql = "SELECT * FROM conference";
+       $query = $pdo-> prepare($sql);
+       $query-> execute();
+    
+       while($line=$query->fetch()){
+         $id = $line['id'];
+         $conferencier = $line['nom'];
+         $titre = $line['titre'];
+         $heure =$line['horaire'];
+         $url = $line['url_photo'];
+
+      echo '
+      <a href="conference.php?id='.$id.'" class="conference'.$id.' conf">
+        <div class="div_conf">
+        <img src="'.$url.'" alt="image de fond" class="backgroundconf">
+          <div class="overlay">
+          <div class="underoverlay">
+            <span class="titreconf">'.$titre.'</span>
+            <span class="nomorateur">Par : '.$conferencier.'</span>
+              <span class="btn-ensavoirplus">En savoir +</span>
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      
+      ';
+
+       }
+    ?>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="formcontact">
+      <form method="POST" action="envoi.php">
+        <label for="mail">MAIL</label>
+        <input type="text" name="mail" id="mail">
+        <label for="message">MESSAGE</label>
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="envoyer">
+
+      </form>
 
   </div>
 
