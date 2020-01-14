@@ -60,4 +60,6 @@ $(window).scroll(function() { // au scroll le header devient plus petit ainsi qu
         $(".logo_header").css("width","200px");
 
         }
+
+    
 });

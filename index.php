@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/master.css">
   <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
   <!-- Chargement des fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -168,15 +169,18 @@
 
   </div>
 
-  <div class="formcontact">
+  <div class="formcontact" id="contact">
+     <h2>Formulaire de contact !</h2>
       <form method="POST" action="envoi.php">
-        <label for="mail">MAIL</label>
-        <input type="text" name="mail" id="mail">
-        <label for="message">MESSAGE</label>
-        <textarea name="message" id="message"></textarea>
-        <input type="submit" value="envoyer">
-
+         <input type="text" name="nom" placeholder="Votre nom" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
+         <input type="email" name="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
+         <textarea name="message" placeholder="Votre message"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
+         <input type="submit" value="Envoyer !" name="mailform"/>
       </form>
+      <?php if(isset($msg)) {
+         echo $msg;
+      }
+      ?>
 
   </div>
 
@@ -184,7 +188,9 @@
 
 
 </div>
-
+<?php 
+include('footer.php');
+?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
