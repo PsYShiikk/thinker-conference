@@ -2,6 +2,14 @@ html{
   scroll-behavior: smooth;
 }
 
+.mentions{
+  padding: 100px 0;
+}
+
+.mentions a{
+  color: black;
+
+}
 
 body{
   width: 100%;
@@ -66,14 +74,24 @@ body{
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   
 }
 
+.reseaux-sociaux a{
+  width: 50%;
+  text-align: center;
+}
+
 .titre-reseaux{
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
   color: white;
   margin-bottom: 10px;
+}
+
+.reseau{
+  width: 80%;
 }
 
 
@@ -102,7 +120,7 @@ body{
 
 .text-conference{
   color:white;
-  font-size:80px;
+  font-size:60px;
   text-transform: uppercase;
   font-weight: 700;
   text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
@@ -112,7 +130,7 @@ body{
   font-family: 'Thinker';
   padding-top: -20px;
   line-height: 110px;
-  font-size:190px;
+  font-size:150px;
   letter-spacing: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -129,12 +147,13 @@ body{
   position: absolute;
   top: 0;
   left: 0;
+  height: 80%;
 }
-
 .fleche-droite{
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   right: 0;
+  width: 30%;
 }
 
 .reservation{
@@ -157,7 +176,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .btn-res > span{
@@ -167,6 +186,7 @@ body{
 
 .btn-res > img{
   margin-right: 10px;
+  height: 30px;
 }
 
 .btn-res::before{
@@ -187,7 +207,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 15px;
 }
 .trois-items > div{
   width: 21%;
@@ -204,7 +224,7 @@ body{
 }
 
 .titre-trois-items{
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -212,7 +232,7 @@ body{
 .texte-trois-items{
   width: 80%;
   text-align: left;
-  line-height: 28px;
+  line-height: 24px;
 }
 
 .texte-trois-items > span{
@@ -227,9 +247,9 @@ body{
 }
 
 .deux-items > p{
-  font-size: 20px;
+  font-size: 15px;
   width: 39%;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .conferences{
@@ -244,7 +264,7 @@ body{
 
 .affichage_conf{
   width: 100%;
-  height: 600px;
+  height : 500px;
   
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -313,6 +333,7 @@ body{
   justify-content:center;
   align-items: center;
   transition: ease top 0.3s;
+  color: white;
   
 }
 
@@ -372,4 +393,120 @@ body{
 .conferenceenavant .overlay{
   top: 0;
 }
+
+
+.contact{
+  
+  padding: 150px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+}
+
+.formcontact{
+  background-color: white;
+  border-radius: 31px;
+  width: 50%;
+  height: 400px;
+  -webkit-box-shadow: -6px 10px 15px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: -6px 10px 15px 0px rgba(0,0,0,0.2);
+box-shadow: -6px 10px 15px 0px rgba(0,0,0,0.2);
+padding: 10px 30px;
+
+}
+
+.formcontact > h2{
+  text-transform: uppercase;
+}
+
+.conferenceunique{
+
+  padding: 100px 0;
+ 
+  display: flex;
+ 
+
+  
+}
+
+.leftconf{
+  width: 50%;
+  
+
+}
+
+.leftconf > div{
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+  
+  
+  
+}
+
+.overlayconf{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(to bottom,rgba(91, 75, 162,0.6),rgb(1, 238, 252,0.6));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  transition: ease top 0.3s;
+  color: white;
+  text-align: center;
+  
+  
+}
+
+.conftitle{
+  font-size: 60px;
+  font-family: thinker;
+  text-transform: uppercase;
+}
+
+.confconferencier{
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.leftconf img{
+  width: 100%;
+  background-color: yellow;
+  object-fit: cover;
+  object-position: center;
+ 
+}
+
+.rightconf{
+  padding: 50px;
+  width: 40%;
+  
+}
+
+.rightconf h2{
+ 
+  margin: 0 10px 20px 0;
+}
+
+.rightconf > div:first-child{
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+
+
+
+
+
 

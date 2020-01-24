@@ -51,13 +51,13 @@ $(window).scroll(function() { // au scroll le header devient plus petit ainsi qu
     var height = $(window).scrollTop();
 
     if(height  > 50) {
-    $("header").css("height","80px");
-    $(".logo_header").css("width","150px");
+    $("header").css("height","60px");
+    $(".logo_header").css("width","130px");
     }
 
     if(height < 50) {
-        $("header").css("height","115px");
-        $(".logo_header").css("width","200px");
+        $("header").css("height","90px");
+        $(".logo_header").css("width","150px");
 
         }
 
