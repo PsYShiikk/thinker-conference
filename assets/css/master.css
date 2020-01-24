@@ -505,7 +505,55 @@ padding: 10px 30px;
   align-items: baseline;
 }
 
+.compteur{
+  height: calc(100vh - 115px - 90px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
 
+.compteur > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.cases_compteur{
+  width: 120px;
+  height: 120px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 6x 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.live{
+  height: calc(100vh - 115px - 90px);
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.live_live{
+  width: 75%;
+  height: 75%;
+}
+
+.live_chat{
+  width: 25%;
+  height: 75%;
+  
+}
 
 
 

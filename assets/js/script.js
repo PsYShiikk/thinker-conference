@@ -59,7 +59,34 @@ $(window).scroll(function() { // au scroll le header devient plus petit ainsi qu
         $("header").css("height","90px");
         $(".logo_header").css("width","150px");
 
-        }
+        };
 
     
 });
+
+var launch = new Date("Mar 19, 2020 18:20:00").getTime();
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = launch - now;
+
+ 
+ 
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   
+    $('#jours').html(days);
+    $('#heures').html(hours);
+    $('#minutes').html(minutes);
+    $('#secondes').html(seconds);
+
+if(distance < 0){
+    clearInterval(x);
+    $('.compteur').hide();
+    $('.live').css('display', 'flex');
+}
+}, 1000);

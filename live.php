@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/master.css">
   <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
   <!-- Chargement des fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -27,11 +28,38 @@
  include("header.php") ?>
 
 <div class="all">
-  <h1 class="titre" id="accueil">Le site est en construction.</h1>
-  <div class="logo"></div>
+
+    <div class="compteur">
+      
+      <div>
+        <span class="compteurtitle">JOURS</span>
+        <div class="cases_compteur" id="jours"></div>
+      </div>
+      <span>:</span>
+      <div>
+        <span class="compteurtitle">HEURES</span>
+        <div class="cases_compteur" id="heures"></div>
+      </div>
+      <span>:</span>
+      <div>
+        <span class="compteurtitle">MINUTES</span>
+        <div class="cases_compteur" id="minutes"></div>
+      </div>
+      <span>:</span>
+      <div>
+        <span class="compteurtitle">SECONDES</span>
+        <div class="cases_compteur" id="secondes"></div>
+      </div>
+    
+    </div>
+
+    <div class="live">
+    <iframe src="https://player.twitch.tv/?channel=thinkerconf" frameborder="0" allowfullscreen="true" scrolling="no" class="live_live"></iframe>
+    <iframe src="https://www.twitch.tv/embed/thinkerconf/chat" frameborder="0" scrolling="no" class="live_chat"></iframe>
+    </div>
 </div>
 
-
+<?php include("footer.php"); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
