@@ -67,8 +67,28 @@
             <span> mes places</span></a>
         </div>
       </div>
+
+      
     </div>
 
+    <div class="reseaux-sociaux-phone">
+        <span class="titre-reseaux black">Suivez nous sur</span>
+        <div>
+          <a href="https://twitter.com/thinkerconf"><img src="assets/img/icone/twitter_b.svg" alt="logo-twitter"
+              class="reseau"></a>
+          <a href="https://www.facebook.com/thinkerconf"><img src="assets/img/icone/facebook_b.svg" alt="logo-facebook"
+              class="reseau"></a>
+          <a href="https://www.instagram.com/thinker_conference/"><img src="assets/img/icone/instagram_b.svg"
+              alt="logo-instagram" class="reseau"></a>
+        </div>
+      </div>
+    <div class="infos-bottom-phone">
+      <div class="infos-generales">
+        <img src="assets/img/date/date.svg" class="date"
+          alt="date de l'evenement : le jeudi 19 mars à 18h30, médiathèque Robert Cousin à Lens">
+      </div>
+      
+    </div>
     <div class="apropos" id="apropos">
 
       <div class="trois-items">

@@ -556,5 +556,140 @@ padding: 10px 30px;
 }
 
 
+.infos-bottom-phone{
+  display: none;
+}
+
+.reseaux-sociaux-phone{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1100px){
+  .all{
+    width: 100%;
+  }
+
+  .infos-side{
+    display: none;
+  }
+
+  .infos-bottom-phone{
+    background:linear-gradient(to top,#5B4BA2,#01EEFC);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .reseau{
+    height: 70px;
+  }
+
+  .apropos{
+    padding: 75px 0;
+  }
+
+  .trois-items{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    
+  }
+
+  .trois-items > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+    
+    
+  }
+
+  .trois-items > div > hr{
+    width: 90%;
+  }
+
+  .deux-items{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deux-items > p{
+    width: 90%;
+    text-align: center;
+  }
+
+  .conferences{
+    padding: 75px 0;
+  }
+
+  .affichage_conf{
+    width: 90%;
+    height : 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "PRINCIPAL PRINCIPAL"
+    "PRINCIPAL PRINCIPAL"
+    "conf1 conf2"
+    "conf3 conf4";
+    grid-gap: 10px;
+  }
+
+  .contact{
+    padding: 75px 0;
+  }
+
+  .black{
+    color: #1C1C1C;
+  }
+
+  .reseaux-sociaux-phone{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    
+  }
+  .reseaux-sociaux-phone > div{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    
+      
+    }
+    
+    .reseaux-sociaux-phone a{
+      width: 50%;
+      text-align: center;
+    }
+
+    .text-conference{
+      font-size: 40px;
+    }
+
+    .text-thinker{
+      font-size: 100px;
+  line-height: 60px;
+    }
+
+    .fleche-gauche{
+      height: 60%;
+      bottom: 10%;
+      top: auto;
+    }
+  }
+
+
+
 
 

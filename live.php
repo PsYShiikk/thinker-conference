@@ -28,9 +28,9 @@
  include("header.php") ?>
 
 <div class="all">
-
+    
     <div class="compteur">
-      
+    
       <div>
         <span class="compteurtitle">JOURS</span>
         <div class="cases_compteur" id="jours"></div>
