@@ -15,6 +15,26 @@ setInterval(function () {
 
 }
 
+function changementMenuPhone(){ //fonction pour le changement du soulignement du menu.
+    let previousAnchor = 'accueil';
+    setInterval(function () {
+        let anchor = window.location.hash.replace('#', '');
+        if (previousAnchor != anchor) {
+            if (previousAnchor.length > 0) {
+                $("#b_" + previousAnchor).removeClass('active');
+            }
+            if (anchor.length > 0) {
+                $("#b_" + anchor).addClass('active');
+            }
+            previousAnchor = anchor;
+        }
+    }, 50);
+
+
+
+}
+
+
 let nom = window.location.pathname;
 nom = nom.split("/");
 nom = nom[nom.length - 1];
@@ -29,19 +49,23 @@ if(anchor != ""){
    
     if(anchor == "" && nom == "index"){
         $('a_accueil').addClass('active');
+        $('b_accueil').addClass('active');
     }
     else{
         changementMenu();
+        changementMenuPhone();
     }
 
     $('.lien_menu').click( ()=>{
         changementMenu();
+        changementMenuPhone();
     });
 }
 
 else{
     $('.lien_menu').click( ()=>{
         changementMenu();
+        changementMenuPhone();
     });
 }
 
@@ -90,3 +114,37 @@ if(distance < 0){
     $('.live').css('display', 'flex');
 }
 }, 1000);
+
+
+
+
+
+let state = false;
+
+
+function toggleButton(){
+    if(state == false){
+        console.log('Coucou ca souvre');
+        state = true;
+        $('.toggleMenuButton').attr('src', 'assets/img/menu/close.svg' );
+
+        $('.phone_menu').css('opacity', '1');
+
+    }
+    else{
+        console.log('Coucou ca se ferme');
+        state = false;
+        $('.toggleMenuButton').attr('src', 'assets/img/menu/open.svg' );
+        $('.phone_menu').css('opacity', '0');
+    }
+}
+
+function closeMenu() {
+
+    console.log('je dois me fermer pardis')
+
+    $('.toggleMenuButton').attr('src', 'assets/img/menu/open.svg' );
+    $('.phone_menu').css('opacity', '0');
+
+    state = false;
+}
