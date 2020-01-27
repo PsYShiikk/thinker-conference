@@ -128,23 +128,27 @@ function toggleButton(){
         state = true;
         $('.toggleMenuButton').attr('src', 'assets/img/menu/close.svg' );
 
-        $('.phone_menu').css('opacity', '1');
+
+        $('.phone_menu').css('display', 'flex');
+
 
     }
     else{
         console.log('Coucou ca se ferme');
         state = false;
         $('.toggleMenuButton').attr('src', 'assets/img/menu/open.svg' );
-        $('.phone_menu').css('opacity', '0');
+        $('.phone_menu').css('display', 'none');
+
+
     }
 }
 
 function closeMenu() {
 
-    console.log('je dois me fermer pardis')
+    console.log('je dois me fermer pardis');
 
     $('.toggleMenuButton').attr('src', 'assets/img/menu/open.svg' );
-    $('.phone_menu').css('opacity', '0');
+    $('.phone_menu').css('display', 'none');
 
     state = false;
 }

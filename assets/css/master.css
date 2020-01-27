@@ -680,6 +680,7 @@ padding: 10px 30px;
     .text-thinker{
       font-size: 100px;
   line-height: 60px;
+      letter-spacing: 7px;
     }
 
     .fleche-gauche{
@@ -687,7 +688,43 @@ padding: 10px 30px;
       bottom: 10%;
       top: auto;
     }
+  .affichage_conf{
+    height: 202vh;
   }
+  }
+
+@media screen and (max-width: 520px){
+  .btn-res{
+    font-size: 11px;
+    padding: 10px 20px;
+  }
+
+  .text-conference{
+    font-size: 30px;
+  }
+
+  .text-thinker{
+    font-size: 80px;
+    line-height: 60px;
+    letter-spacing: 7px;
+  }
+
+  .fleche-gauche{
+    height: 50%;
+    bottom: 10%;
+    top: auto;
+  }
+
+  .affichage_conf{
+    height: 100vh;
+  }
+
+
+
+
+
+
+}
 
 
 
