@@ -42,11 +42,11 @@
       <div class="reseaux-sociaux">
         <span class="titre-reseaux">Suivez nous sur</span>
         <div>
-          <a href="https://twitter.com/thinkerconf"><img src="assets/img/icone/twitter.svg" alt="logo-twitter"
+          <a href="https://twitter.com/thinkerconf" target="_blank"><img src="assets/img/icone/twitter.svg" alt="logo-twitter"
               class="reseau"></a>
-          <a href="https://www.facebook.com/thinkerconf"><img src="assets/img/icone/facebook.svg" alt="logo-facebook"
+          <a href="https://www.facebook.com/thinkerconf" target="_blank"><img src="assets/img/icone/facebook.svg" alt="logo-facebook"
               class="reseau"></a>
-          <a href="https://www.instagram.com/thinker_conference/"><img src="assets/img/icone/instagram.svg"
+          <a href="https://www.instagram.com/thinker_conf/" target="_blank"><img src="assets/img/icone/instagram.svg"
               alt="logo-instagram" class="reseau"></a>
         </div>
       </div>

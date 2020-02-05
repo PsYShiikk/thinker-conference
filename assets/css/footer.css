@@ -13,18 +13,19 @@ footer{
 .topfooter{
     display: flex;
     margin-bottom: 20px;
+    align-items: center;
     
 }
 
 
-.topfooter > a{
+.topfooter a{
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px;
     
 }
 
-.topfooter > a > img{
+.topfooter > div >  a > img{
     height: 20px;
 }
 
@@ -32,4 +33,33 @@ footer{
     color: white;
     text-decoration: none;
     font-weight: 700;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    footer{
+        height: 300px;
+        
+    }
+
+    .topfooter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .topfooter a img{
+        
+    }
+
+    .bottomfooter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .baton{
+        display: none;
+    }
+
+    
 }

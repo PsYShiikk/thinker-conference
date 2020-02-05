@@ -556,6 +556,7 @@ padding: 10px 30px;
 }
 
 
+
 .infos-bottom-phone{
   display: none;
 }
@@ -563,6 +564,21 @@ padding: 10px 30px;
 .reseaux-sociaux-phone{
   display: none;
 }
+
+.billeterie{  
+  display: flex;
+  padding: 100px 0;
+  
+}
+
+#haWidget{
+  height:750px;
+  border:none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
 
 
 
@@ -691,6 +707,32 @@ padding: 10px 30px;
   .affichage_conf{
     height: 202vh;
   }
+
+  .compteur{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+  }
+  
+  .live{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .live > iframe{
+    height: 40%;
+    width: 100%;
+  }
+
+
+
+
+
   }
 
 @media screen and (max-width: 520px){
@@ -718,6 +760,34 @@ padding: 10px 30px;
   .affichage_conf{
     height: 100vh;
   }
+
+  .deuxpoints{
+    display: none;
+  }
+
+  .cases_compteur{
+    margin: 10px;
+  }
+
+  .titreconf{
+    font-size: 20px;
+  }
+
+  .nomorateur{
+    font-size: 12px;
+  }
+
+  .btn-ensavoirplus{
+    font-size: 12px;
+    padding: 7px 20px;
+  }
+
+  
+  
+  
+
+
+  
 
 
 

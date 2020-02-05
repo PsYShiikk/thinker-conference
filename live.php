@@ -35,17 +35,17 @@
         <span class="compteurtitle">JOURS</span>
         <div class="cases_compteur" id="jours"></div>
       </div>
-      <span>:</span>
+      <span class="deuxpoints">:</span>
       <div>
         <span class="compteurtitle">HEURES</span>
         <div class="cases_compteur" id="heures"></div>
       </div>
-      <span>:</span>
+      <span class="deuxpoints">:</span>
       <div>
         <span class="compteurtitle">MINUTES</span>
         <div class="cases_compteur" id="minutes"></div>
       </div>
-      <span>:</span>
+      <span class="deuxpoints">:</span>
       <div>
         <span class="compteurtitle">SECONDES</span>
         <div class="cases_compteur" id="secondes"></div>

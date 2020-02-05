@@ -88,7 +88,7 @@ $(window).scroll(function() { // au scroll le header devient plus petit ainsi qu
     
 });
 
-var launch = new Date("Mar 19, 2020 18:20:00").getTime();
+var launch = new Date("Mar 19, 2020 18:30:00").getTime();
 var x = setInterval(function() {
 
   var now = new Date().getTime();
