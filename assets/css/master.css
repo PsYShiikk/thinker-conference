@@ -422,6 +422,73 @@ padding: 10px 30px;
   text-transform: uppercase;
 }
 
+.formcontact > form{
+  height: 70%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.email-contact{
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 0px;
+  border: none;
+  outline: none;
+  position: relative;
+  
+}
+
+.email-border{
+  width: 100%;
+  position: relative;
+}
+
+
+.email-border:nth-child(2){
+  width: 100%;
+  height: 50%;
+  position: relative;
+  
+}
+
+.email-border::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,#5B4BA2 ,#01EEFC);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+
+}
+
+
+.message-contact{
+  resize:none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background:transparent;
+  padding: 0;
+}
+
+.btn-contact{
+  padding : 10px 20px; 
+  background:linear-gradient(to bottom,#5B4BA2, #01EEFC);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
 .conferenceunique{
 
   padding: 100px 0;

@@ -209,17 +209,11 @@
     <div class="formcontact" id="contact">
       <h2>Contactez-nous</h2>
       <form method="POST" action="envoi.php">
-        
-        <input type="email" name="mail" placeholder="Votre email"
-          value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
-        <textarea name="message"
-          placeholder="Votre message"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
-        <input type="submit" value="Envoyer !" name="mailform" />
+        <span class="email-border"><input type="email" name="mail" placeholder="Votre email" class="email-contact"></span>
+        <span class="email-border"><textarea name="message" placeholder="Votre message" class="message-contact"></textarea></span>
+        <input type="submit" value="Envoyer !" name="mailform" class="btn-contact"/>
       </form>
-      <?php if(isset($msg)) {
-         echo $msg;
-      }
-      ?>
+      
 
     </div>
     </div>
